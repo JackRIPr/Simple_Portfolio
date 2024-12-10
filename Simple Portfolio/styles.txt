@@ -1,0 +1,246 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+header {
+    background-color: #282c34;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #61dafb;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('images/RDR2.jpg') center/cover no-repeat, linear-gradient(135deg, #282c34, #61dafb);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.hero-content {
+    max-width: 100%; /* Ensure full width usage */
+    padding: 0 2rem; /* Add padding for better spacing */
+    text-align: center; /* Center align all content */
+    margin: 0 auto; /* Center the container itself */
+}
+
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif; /* Elegant font style */
+    font-size: 4.0rem; /* Large and bold */
+    font-weight: 600; /* Make it bold */
+    font-style: italic; /* Italicize the text */
+    background: linear-gradient(to right, #9b4dca, #6a1b9a); /* Light to dark purple gradient */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes text transparent to show the gradient */
+    text-align: center; /* Center alignment */
+    margin-bottom: 1.2rem; /* Space below the title */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for emphasis */
+    letter-spacing: 1px; /* Slightly increased spacing for a premium look */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content .cta-button {
+    display: inline-block;
+    background-color: #61dafb;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-content .cta-button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    max-width: 900px;
+    text-align: left;
+}
+
+.about-content img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.about-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #555;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+#about {
+    background: url('images/About Me.jpg') center/cover no-repeat, #6a1b9a; /* Fallback color */
+    background-size: cover; /* This makes the image cover the entire section */
+    background-position: center; /* Centers the background image */
+    color: white; /* Text color for contrast */
+    padding: 4rem 2rem; /* Adds padding for spacing inside the section */
+    height: 100vh; /* Optional: Makes the section take the full height of the viewport */
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Prevents the default underline on links */
+    color: inherit; /* Ensures the text color inherits from the parent, not the link color */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%; /* Ensures the image fits within the card width */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover; /* Ensures the image looks good within the container */
+    max-height: 200px; /* Optional: Set a maximum height for uniformity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 1.25rem; /* Slightly larger font for the title */
+    font-weight: 600; /* Bold for emphasis */
+    margin-bottom: 0.5rem; /* Adds space between the title and description */
+    color: #333; /* Dark color for the text */
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for the description */
+    line-height: 1.5; /* Makes the text more readable */
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+form button {
+    background-color: #61dafb;
+    border: none;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #21a1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #282c34;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin: 0 auto 1.5rem;
+    }
+}

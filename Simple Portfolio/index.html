@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jasraj Singh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>WELCOME TO MY PORTFOLIO</h1>
+            <p>Hello! I'm <strong>Jasraj Singh</strong>, a passionate developer and tech enthusiast.</p>
+            <a href="#about" class="cta-button">Learn More About Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/RDR2-ART.webp" alt="Jasraj Singh">
+            <p>
+                I'm a final-year student at <strong>Punjab Engineering College</strong>. My expertise lies in Artificial Intelligence, Machine Learning, and Web Development. 
+                I have a strong passion for creating innovative solutions that combine technology with creativity.
+            </p>
+            <p>
+                My recent projects include music sequence generation using RNNs, stock price forecasting with LSTMs, and web-based hotel management systems. 
+                Outside of coding, I enjoy exploring sci-fi movies and binge-watching thrilling series like <em>Squid Game</em>.
+            </p>
+            <p>
+                I have a deep appreciation for open-world games such as <strong>GTA</strong>, <strong>Red Dead Redemption 2</strong>, and <strong>Assassin's Creed</strong>. These games are visually stunning and provide an immersive experience with their expansive worlds and intricate storylines. The challenges they present, combined with the freedom to explore, are what draw me in. 
+            </p>
+            <p>
+                In addition to gaming, I enjoy playing <strong>chess</strong>. Chess is a game that requires strategic thinking, patience, and foresight, which helps sharpen my problem-solving skills—skills I apply in my development projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 - Music Sequence Generation -->
+            <a href="https://github.com/JackRIPr" target="_blank" class="project-card">
+                <img src="images/Music_Gen.webp" alt="Music Sequence Generation">
+                <h3>Music Sequence Generation</h3>
+                <p>
+                    Built a model to generate sequences of musical notes using RNNs and the Maestro dataset, 
+                    exploring the temporal patterns of music.
+                </p>
+            </a>
+
+            <!-- Project 2 - Hotel Management System -->
+            <a href="https://github.com/JackRIPr" target="_blank" class="project-card">
+                <img src="images/Hotel Management System.webp" alt="Hotel Management System">
+                <h3>Hotel Management System</h3>
+                <p>
+                    Designed a hotel management system in C++, integrating a user-friendly interface for reservations and management tasks.
+                </p>
+            </a>
+
+            <!-- Project 3 - Stock Price Prediction -->
+            <a href="https://github.com/JackRIPr" target="_blank" class="project-card">
+                <img src="images/Stock Market Price Pred.jpg" alt="Stock Price Prediction">
+                <h3>Stock Price Prediction</h3>
+                <p>
+                    Created a time series forecasting model using LSTMs to predict stock prices, incorporating sentiment analysis for added accuracy.
+                </p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Jasraj Singh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
